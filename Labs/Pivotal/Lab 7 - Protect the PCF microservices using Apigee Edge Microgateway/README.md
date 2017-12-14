@@ -24,6 +24,8 @@ This lab describes how to push a sample app to Pivotal Cloud Foundry (PCF), crea
 
 # Instructions
 
+**Important** - Click on [this link](https://amer-api-partner19-prod.apigee.net/v1/pcf-apigee?apikey=apZNoolPGfOzMGS1ZTLG5kRGGGhBmAND) to get the environment variables and login credentials you need for the next step (The snippet below is a template and does not contain the actual variables)
+
 Before you begin, you will need to get the following from your PCF instance or receive them from your instructor.
 
 YOUR-SYSTEM-DOMAIN: This the the domian/hostname where the PCF is deployed. If you are using self signed certs for this endpoint, you will have to use `--skip-ssl-validation` for some of the commands
