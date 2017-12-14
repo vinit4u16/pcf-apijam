@@ -43,9 +43,14 @@ This lab describes how to push a sample app to Pivotal Cloud Foundry (PCF), crea
     If you are on windows/or want to get the access token manually, you have to issue an HTTP call, similar to this
     
     ```
-curl -X POST   https://login.apigee.com/oauth/token   -H 'authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0'   -H 'Content-type: application/x-www-form-urlencoded'   --data-urlencode 'username={USER_NAME}' --data-urlencode 'password={Password}' --data-urlencode 'grant_type=password'
+    curl -X POST   https://login.apigee.com/oauth/token \
+    -H 'authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0' \
+    -H 'Content-type: application/x-www-form-urlencoded' \
+    --data-urlencode 'username={USER_NAME}' \
+    --data-urlencode 'password={Password}' \
+    --data-urlencode 'grant_type=password'
 	
-	SET APIGEE_TOKEN={token}
+	export APIGEE_TOKEN={token}
     ```
     
     You will use the access_token from the JSON 
