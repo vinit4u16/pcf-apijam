@@ -122,7 +122,7 @@ PCF_DOMAIN: PCF Domain for your apps.
     If you are on Linux/mac, the following commands should give you a valid token that you can use for the next step
     
     ```
-curl -X POST https://login.apigee.com/oauth/token -H 'authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0' -H 'content-type: application/x-www-form-urlencoded' -d 'username={USER_NAME}&password={PASSWORD}&grant_type=password'
+curl -X POST   https://login.apigee.com/oauth/token   -H 'authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0'   -H 'Content-type: application/x-www-form-urlencoded'   --data-urlencode 'username={USER_NAME}' --data-urlencode 'password={Password}' --data-urlencode 'grant_type=password'
     ```
     
     
