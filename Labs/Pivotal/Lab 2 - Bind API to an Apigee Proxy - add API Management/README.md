@@ -26,7 +26,7 @@ This lab describes how to push a sample app to Pivotal Cloud Foundry (PCF), crea
 
 # Instructions
 
-#### Windows Users: replace "export" commands with Windows' "set" command.  In addition, when  environment variables such as $APIGEE_TOKEN are used, please replace it with %APIGEE_TOKEN%
+#### Windows Users: replace "export" commands with "set", which sets environment variables in Windows.  In addition, when environment variables such as $APIGEE_TOKEN are used throughout the guide, replace them as follows: $APIGEE_TOKEN %APIGEE_TOKEN%
 
 1. Login to Apigee, through Apigee's SSO
 
