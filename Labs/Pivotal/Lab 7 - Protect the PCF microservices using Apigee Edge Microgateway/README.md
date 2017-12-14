@@ -122,11 +122,7 @@ PCF_DOMAIN: PCF Domain for your apps.
     If you are on Linux/mac, the following commands should give you a valid token that you can use for the next step
     
     ```
-    curl https://login.apigee.com/resources/scripts/sso-cli/ssocli-bundle.zip -o "ssocli-bundle.zip"
-    tar xvf ssocli-bundle.zip
-    ./get_token
-	<<export the token to a environment variable>>
-	export APIGEE_TOKEN={token}
+curl -X POST https://login.apigee.com/oauth/token -H 'authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0' -H 'content-type: application/x-www-form-urlencoded' -d 'username={USER_NAME}&password={PASSWORD}&grant_type=password'
     ```
     
     
